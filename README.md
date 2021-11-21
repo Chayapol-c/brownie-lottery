@@ -1,10 +1,21 @@
-# Features
+# Lottery Smart Contract
 
-1. Users can enter lottery with ETH based on a USD fee
-2. An admin will choose when the lottery is over 
-3. The lottery will select a random winner
+running the script
 
-## How do we want to test this?
+```
+brownie run scripts/deploy.py --network [network name]
+```
+
+running the test
 1. `mainnet-fork`
 2. `development` with mocks
 3. `testnet`
+```
+brownie test --network [network name]
+```
+
+## Features
+
+1. Users can enter lottery with ETH based on a USD fee.
+2. An admin will choose when the lottery is over.
+3. The lottery will select a random winner.
